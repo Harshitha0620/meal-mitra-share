@@ -14,40 +14,22 @@ interface TeamMember {
 const Team = () => {
   const teamMembers: TeamMember[] = [
     {
-      name: "Priya Shah",
+      name: "Harshitha R",
       role: "Founder & Director",
       bio: "Priya has over 10 years of experience in food policy and community service. She founded Meal Mitra to address the dual issues of food waste and hunger in urban communities.",
-      imagePlaceholder: "PS"
+      imagePlaceholder: "H"
     },
     {
-      name: "Vikram Patel",
+      name: "Bhavana",
       role: "Operations Manager",
       bio: "Vikram oversees the day-to-day operations of Meal Mitra, ensuring smooth coordination between donors and recipients. He has a background in logistics and supply chain management.",
-      imagePlaceholder: "VP"
+      imagePlaceholder: "B"
     },
     {
-      name: "Ananya Gupta",
+      name: "PRANATHI",
       role: "Community Outreach",
       bio: "Ananya builds and maintains relationships with community organizations, food businesses, and volunteers. She is passionate about grassroots community development.",
       imagePlaceholder: "AG"
-    },
-    {
-      name: "Rahul Sharma",
-      role: "Technology Lead",
-      bio: "Rahul developed and maintains the Meal Mitra platform. With a background in software engineering, he is committed to using technology for social good.",
-      imagePlaceholder: "RS"
-    },
-    {
-      name: "Meera Joshi",
-      role: "Food Safety Advisor",
-      bio: "Meera ensures that all food donations meet safety standards. She has extensive experience in food safety regulations and public health.",
-      imagePlaceholder: "MJ"
-    },
-    {
-      name: "Arjun Reddy",
-      role: "Volunteer Coordinator",
-      bio: "Arjun manages our network of dedicated volunteers who help with food collection and distribution. He is driven by a passion for community service.",
-      imagePlaceholder: "AR"
     }
   ];
 
