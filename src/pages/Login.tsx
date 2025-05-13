@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { useAuth } from '@/context/AuthContext';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { toast } from "@/components/ui/use-toast";
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -32,6 +33,10 @@ const Login = () => {
     try {
       const success = await login(email, password);
       if (success) {
+        toast({
+          title: "Login successful",
+          description: "Welcome back to Meal Mitra!",
+        });
         navigate('/');
       } else {
         setError('Invalid email or password');

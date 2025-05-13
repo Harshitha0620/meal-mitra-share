@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { useAuth } from '@/context/AuthContext';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { toast } from "@/components/ui/use-toast";
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -46,7 +47,13 @@ const Register = () => {
     try {
       const success = await register(name, email, password);
       if (success) {
+        toast({
+          title: "Account created successfully",
+          description: "You can now login with your credentials",
+        });
         navigate('/login');
+      } else {
+        setError('Email already exists. Please try logging in instead.');
       }
     } catch (err) {
       setError('An error occurred. Please try again.');
